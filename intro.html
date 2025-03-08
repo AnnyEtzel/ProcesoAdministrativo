@@ -5,6 +5,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Le_Rêve - Perfumes Originales</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f0f5;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #a68dad;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        section {
+            padding: 40px;
+            text-align: center;
+        }
+        .descripcion-recuadro {
+            background-color: #dad2e9;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+            max-width: 600px;
+            margin: 20px auto;
+        }
+        .productos-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .producto {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+        .producto img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        button {
+            background-color: #5c5470;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #2d2b4a;
+        }
+        footer {
+            background-color: #2d2b4a;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -27,22 +102,18 @@
     
     <section id="nosotros">
         <h2>Sobre Nosotros</h2>
-        <p>Le_Rêve es un emprendimiento dedicado a la venta de perfumes originales, ofreciendo una experiencia única para quienes buscan fragancias de alta calidad. Nos diferenciamos por nuestro compromiso con la seguridad y transparencia, garantizando autenticidad en cada compra.</p>
+        <div class="descripcion-recuadro">
+            <p>Le_Rêve es un emprendimiento dedicado a la venta de perfumes originales, ofreciendo una experiencia única para quienes buscan fragancias de alta calidad. Nos diferenciamos por nuestro compromiso con la seguridad y transparencia, garantizando autenticidad en cada compra.</p>
+        </div>
     </section>
     
     <section id="productos">
         <h2>Nuestros Productos</h2>
         <div class="productos-container">
             <div class="producto">
-                <img src="perfume1.jpg" alt="Perfume 1">
-                <h3>Perfume de Lujo 1</h3>
-                <p>Descripción breve del perfume.</p>
-                <button>Comprar</button>
-            </div>
-            <div class="producto">
-                <img src="perfume2.jpg" alt="Perfume 2">
-                <h3>Perfume de Lujo 2</h3>
-                <p>Descripción breve del perfume.</p>
+                <img src="coco-chanel.png" alt="Coco Mademoiselle Chanel">
+                <h3>Coco Mademoiselle - Chanel</h3>
+                <p>Una fragancia icónica que combina notas cítricas con un corazón floral.</p>
                 <button>Comprar</button>
             </div>
         </div>
